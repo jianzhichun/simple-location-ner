@@ -12,7 +12,7 @@ import slner.trietree.TrietreeBuilder;
 
 /**
  * 
- * @author Administrator
+ * @author jianzhichun
  * 
  * @param <T>
  *            T: type about entity stored

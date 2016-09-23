@@ -6,7 +6,11 @@ import org.junit.Before;
 import org.junit.Test;
 
 import slner.core.SimpleLocationRecognizer;
-
+/**
+ * 
+ * @author jianzhichun
+ *
+ */
 public class SimpleLocationRecognizerTest {
 	
 	SimpleLocationRecognizer simpleLocationRecognizer;

@@ -15,5 +15,9 @@ hs_err_pid*
 .project
 .classpath
 
+Main.java
+客户发货地址.xls
+客户发货地址output.xls
+
 target/
 .settings/

@@ -1,5 +1,9 @@
 package slner.entity;
-
+/**
+ * 
+ * @author jianzhichun
+ *
+ */
 public class Location {
 	public enum Type{
 		province,city,area,

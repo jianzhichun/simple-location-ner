@@ -3,7 +3,12 @@ package slner.trietree;
 import java.util.List;
 
 import slner.entity.Token;
-
+/**
+ * 
+ * @author jianzhichun
+ *
+ * @param <T>
+ */
 public interface Trietree<T> {
 
 	/**

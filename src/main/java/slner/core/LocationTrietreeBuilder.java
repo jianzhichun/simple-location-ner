@@ -14,7 +14,7 @@ import slner.trietree.Trietree;
 import slner.trietree.TrietreeBuilder;
 /**
  * LocationTrietreeBuilder
- * @author Administrator
+ * @author jianzhichun
  *
  */
 public class LocationTrietreeBuilder implements TrietreeBuilder<List<Location>> {

@@ -19,7 +19,7 @@ import slner.trietree.impl.TrietreeImpl;
 /**
  * SimpleLocationRecognizer
  * 
- * @author Administrator
+ * @author jianzhichun
  *
  */
 public class SimpleLocationRecognizer {

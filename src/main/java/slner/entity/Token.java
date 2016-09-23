@@ -1,5 +1,10 @@
 package slner.entity;
-
+/**
+ * 
+ * @author jianzhichun
+ *
+ * @param <T>
+ */
 public class Token<T> {
 	private String name;
 	private T entity;
