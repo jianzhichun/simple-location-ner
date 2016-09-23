@@ -18,6 +18,3 @@ Testcase:
 就测了一个方法,见src/test/java/
 <br/>
 见SimpleLocationRecognizer.java 可测试 
-效果：
-<br/>
-见src/main/java/resources/客户发货地址output.xls
