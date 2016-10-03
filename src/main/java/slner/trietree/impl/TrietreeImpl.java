@@ -87,6 +87,7 @@ public class TrietreeImpl<T> implements Trietree<T> {
 				tokens.add(new Token<String>(temp, ""));
 				first++;
 				end = first + 1;
+				continue;
 			}
 			Token<?> token_B = len <= end ? null
 					: this.match(String.valueOf(Arrays.copyOfRange(chars, first, end + 1 > len ? len : end + 1)));
