@@ -18,7 +18,7 @@ import slner.trietree.TrietreeBuilder;
  *            T: type about entity stored
  * @param <E>
  */
-public class TrietreeImpl<T> implements Trietree<T> {
+public class DefaultTrietree<T> implements Trietree<T> {
 
 	class Node {
 		char name;
@@ -33,7 +33,7 @@ public class TrietreeImpl<T> implements Trietree<T> {
 
 	Node root;
 
-	public TrietreeImpl() {
+	public DefaultTrietree() {
 		root = new Node('r', null);
 	}
 	@Override

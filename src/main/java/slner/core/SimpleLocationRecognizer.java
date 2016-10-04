@@ -14,7 +14,7 @@ import slner.entity.Location;
 import slner.entity.Token;
 import slner.entity.Location.Type;
 import slner.trietree.Trietree;
-import slner.trietree.impl.TrietreeImpl;
+import slner.trietree.impl.DefaultTrietree;
 
 /**
  * SimpleLocationRecognizer
@@ -74,7 +74,7 @@ public class SimpleLocationRecognizer {
 	private final static SimpleLocationRecognizer INSTANCE = new SimpleLocationRecognizer();
 
 	private SimpleLocationRecognizer() {
-		trietree = new LocationTrietreeBuilder().build(new TrietreeImpl<List<Location>>());
+		trietree = new LocationTrietreeBuilder().build(new DefaultTrietree<List<Location>>());
 	}
 
 	public static SimpleLocationRecognizer getInstance() {
