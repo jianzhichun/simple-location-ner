@@ -15,6 +15,7 @@ import slner.entity.Token;
 import slner.entity.Location.Type;
 import slner.trietree.Trietree;
 import slner.trietree.impl.DefaultTrietree;
+import slner.trietree.impl.TernarySearchTrie;
 
 /**
  * SimpleLocationRecognizer
@@ -74,14 +75,15 @@ public class SimpleLocationRecognizer {
 	private final static SimpleLocationRecognizer INSTANCE = new SimpleLocationRecognizer();
 
 	private SimpleLocationRecognizer() {
-		trietree = new LocationTrietreeBuilder().build(new DefaultTrietree<List<Location>>());
+//		trietree = new LocationTrietreeBuilder().build(new DefaultTrietree<List<Location>>());
+		trietree = new LocationTrietreeBuilder().build(new TernarySearchTrie<List<Location>>());
 	}
 
 	public static SimpleLocationRecognizer getInstance() {
 		return INSTANCE;
 	}
 
-	private Trietree<List<Location>> trietree;
+	Trietree<List<Location>> trietree;
 
 	public List<Token<?>> getLocationsTokens(String str) {
 		return trietree.MaximumMatching(str).parallelStream().filter(token -> {
@@ -154,8 +156,16 @@ public class SimpleLocationRecognizer {
 	}
 
 	public static void main(String[] args) {
-		long a = System.currentTimeMillis();
-		System.out.println(SimpleLocationRecognizer.getInstance().recognizeLocationFormat("河北石家莊桥西区华北商贸城十七区二十二排四号"));
-		System.out.println(System.currentTimeMillis()-a);
+		
+		SimpleLocationRecognizer simpleLocationRecognizer = SimpleLocationRecognizer.getInstance();
+//		long a = System.currentTimeMillis();
+//		System.out.println(simpleLocationRecognizer.recognizeLocationFormat("河北石家莊桥西区华北商贸城十七区二十二排四号"));
+//		System.out.println(System.currentTimeMillis()-a);
+//		TernarySearchTrie<List<Location>> tst = (TernarySearchTrie<List<Location>>)simpleLocationRecognizer.trietree;
+//		System.out.println(tst.TreeHeight(tst.getRoot()));
+		while(true){
+			
+		}
 	}
+	
 }
